@@ -1,0 +1,5 @@
+<h1>お店の紹介</h1>
+<%= link_to image_tag('coffee2.png'), shop_path(@shops) %>
+<%= form_with model:@shop, local:true do |f| %>
+<%= f.text_field :title, class: "shop_name" %>
+<% end %>
